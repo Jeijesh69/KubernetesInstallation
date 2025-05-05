@@ -70,7 +70,7 @@ EOF
 sudo sysctl --system
 
 # Initialize Kubernetes master node using the control plane IP
-sudo kubeadm init --apiserver-advertise-address=${CONTROL_PLANE_IP} --cri-socket unix:///var/run/cri-dockerd.sock
+sudo kubeadm init --apiserver-advertise-address=${CONTROL_PLANE_IP} --cri-socket unix:///var/run/cri-dockerd.sock  --pod-network-cidr=192.168.0.0/16
 
 # Set up kubectl for the current user
 mkdir -p $HOME/.kube
