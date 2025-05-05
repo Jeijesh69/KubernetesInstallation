@@ -52,8 +52,6 @@ Instalasi Kubernetes di AWS
    ```
     chmod +x kubernetes_dashboard_master.sh
    ./kubernetes_dashboard_master.sh
-
-13. Apply K8s-Dash
-   kubectl apply -f k8s-dash.yaml
+   ```
 
 Dashboard Siap Digunakan
